@@ -8,9 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var activities = Activities()
+    @State private var showingAddActivity = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(activities.items) { activity in
+                    VStack(alignment: .leading) {
+                        Text(activity.title)
+                            .font(.headline)
+                        
+                        Text(activity.description)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                .onDelete(perform: removeItems)
+            }
+            .navigationTitle("HabitMe")
+            .toolbar {
+                ToolbarItemGroup(placement: .primaryAction) {
+                    Button {
+                        showingAddActivity = true
+                    } label: {
+                        Label("Add activity", systemImage: "plus")
+                    }
+                }
+                
+                ToolbarItemGroup {
+                    EditButton()
+                }
+            }
+            .sheet(isPresented: $showingAddActivity) {
+                AddView(activities: activities)
+            }
+        }
+    }
+    
+    func removeItems(at offsets: IndexSet) {
+        activities.items.remove(atOffsets: offsets)
     }
 }
 

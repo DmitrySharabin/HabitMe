@@ -11,6 +11,9 @@
 		8E30017627527245009C9DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E30017527527245009C9DA0 /* ContentView.swift */; };
 		8E30017827527247009C9DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E30017727527247009C9DA0 /* Assets.xcassets */; };
 		8E30017B27527247009C9DA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E30017A27527247009C9DA0 /* Preview Assets.xcassets */; };
+		8E300182275273F2009C9DA0 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E300181275273F2009C9DA0 /* ActivityItem.swift */; };
+		8E3001842752751C009C9DA0 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3001832752751C009C9DA0 /* Activities.swift */; };
+		8E30018627528285009C9DA0 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E30018527528285009C9DA0 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8E30017527527245009C9DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E30017727527247009C9DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E30017A27527247009C9DA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E300181275273F2009C9DA0 /* ActivityItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		8E3001832752751C009C9DA0 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		8E30018527528285009C9DA0 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				8E30017327527245009C9DA0 /* HabitMeApp.swift */,
 				8E30017527527245009C9DA0 /* ContentView.swift */,
+				8E30018527528285009C9DA0 /* AddView.swift */,
+				8E300181275273F2009C9DA0 /* ActivityItem.swift */,
+				8E3001832752751C009C9DA0 /* Activities.swift */,
 				8E30017727527247009C9DA0 /* Assets.xcassets */,
 				8E30017927527247009C9DA0 /* Preview Content */,
 			);
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3001842752751C009C9DA0 /* Activities.swift in Sources */,
+				8E300182275273F2009C9DA0 /* ActivityItem.swift in Sources */,
+				8E30018627528285009C9DA0 /* AddView.swift in Sources */,
 				8E30017627527245009C9DA0 /* ContentView.swift in Sources */,
 				8E30017427527245009C9DA0 /* HabitMeApp.swift in Sources */,
 			);
