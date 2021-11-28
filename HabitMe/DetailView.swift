@@ -57,8 +57,14 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            DetailView(activities: Activities(), activity: ActivityItem(title: "Activity title", description: "Activity description.", completionCount: 10))
+        Group {
+            NavigationView {
+                DetailView(activities: Activities(), activity: ActivityItem(title: "Activity title", description: "Activity description.", completionCount: 10))
+            }
+            
+            NavigationView {
+                DetailView(activities: Activities(), activity: ActivityItem(title: "Activity title", description: "", completionCount: 10))
+            }
         }
     }
 }
