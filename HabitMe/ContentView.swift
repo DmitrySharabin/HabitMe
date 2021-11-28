@@ -22,9 +22,11 @@ struct ContentView: View {
                             Text(activity.title)
                                 .font(.headline)
                             
-                            Text(activity.description)
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
+                            if !activity.description.isEmpty {
+                                Text(activity.description)
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                            }
                         }
                     }
                 }

@@ -19,8 +19,15 @@ struct DetailView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(activity.description)
-                .padding(.bottom, 5)
+            Group {
+                if activity.description.isEmpty {
+                    Text("No description.")
+                        .foregroundColor(.secondary)
+                } else {
+                    Text(activity.description)
+                }
+            }
+            .padding(.bottom, 5)
             
             Divider()
             

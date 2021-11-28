@@ -14,6 +14,10 @@ struct AddView: View {
     @State private var title = ""
     @State private var description = ""
     
+    var trimmedTitle: String {
+        title.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
     var body: some View {
         NavigationView {
             Form {
@@ -31,11 +35,13 @@ struct AddView: View {
                 
                 ToolbarItemGroup(placement: .confirmationAction) {
                     Button("Add") {
-                        let item = ActivityItem(title: title, description: description)
+                        let item = ActivityItem(title: trimmedTitle, description: description.trimmingCharacters(in: .whitespaces))
+                        
                         activities.items.append(item)
                         
                         dismiss()
                     }
+                    .disabled(trimmedTitle.isEmpty)
                 }
             }
         }
