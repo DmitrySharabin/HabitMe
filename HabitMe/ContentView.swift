@@ -15,13 +15,17 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(activities.items) { activity in
-                    VStack(alignment: .leading) {
-                        Text(activity.title)
-                            .font(.headline)
-                        
-                        Text(activity.description)
-                            .font(.footnote)
-                            .foregroundColor(.secondary)
+                    NavigationLink {
+                        DetailView(activities: activities, activity: activity)
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Text(activity.title)
+                                .font(.headline)
+                            
+                            Text(activity.description)
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
                 .onDelete(perform: removeItems)

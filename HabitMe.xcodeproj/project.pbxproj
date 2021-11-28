@@ -14,6 +14,7 @@
 		8E300182275273F2009C9DA0 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E300181275273F2009C9DA0 /* ActivityItem.swift */; };
 		8E3001842752751C009C9DA0 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3001832752751C009C9DA0 /* Activities.swift */; };
 		8E30018627528285009C9DA0 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E30018527528285009C9DA0 /* AddView.swift */; };
+		8E52017A27537A1C006B97F6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52017927537A1C006B97F6 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8E300181275273F2009C9DA0 /* ActivityItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
 		8E3001832752751C009C9DA0 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		8E30018527528285009C9DA0 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		8E52017927537A1C006B97F6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				8E30017327527245009C9DA0 /* HabitMeApp.swift */,
 				8E30017527527245009C9DA0 /* ContentView.swift */,
+				8E52017927537A1C006B97F6 /* DetailView.swift */,
 				8E30018527528285009C9DA0 /* AddView.swift */,
 				8E300181275273F2009C9DA0 /* ActivityItem.swift */,
 				8E3001832752751C009C9DA0 /* Activities.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3001842752751C009C9DA0 /* Activities.swift in Sources */,
+				8E52017A27537A1C006B97F6 /* DetailView.swift in Sources */,
 				8E300182275273F2009C9DA0 /* ActivityItem.swift in Sources */,
 				8E30018627528285009C9DA0 /* AddView.swift in Sources */,
 				8E30017627527245009C9DA0 /* ContentView.swift in Sources */,
